@@ -1,0 +1,24 @@
+html {
+  font-size: 24px;
+}
+h1 {
+  font-size: 1.7em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.1em;
+}
+body {
+  background-color: #333;
+  color: whitesmoke;
+}
+a:visited {
+  color: lightblue;
+}
+
+a:hover,
+a:active {
+  color: #eee;
+}
