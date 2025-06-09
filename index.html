@@ -93,12 +93,56 @@
       <section id="s3">
         <h1>Section 3</h1>
         <h2>Tables</h2>
-        <table></table>
+        <table>
+          <caption>
+            table caption
+          </caption>
+
+          <thead>
+            <tr>
+              <th></th>
+              <th scope="col">table head</th>
+              <th>table head</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>table head</th>
+              <td>|row 1 col 1|</td>
+              <td>|row 1 col 2|</td>
+            </tr>
+            <tr>
+              <th>table head</th>
+              <td>|row 2 col 1|</td>
+              <td>|row 2 col 2|</td>
+            </tr>
+          </tbody>
+
+          <tr>
+            <th>table head</th>
+            <th rowspan="2">rowspan 2</th>
+            <td>table data</td>
+          </tr>
+          <tr>
+            <th>table head</th>
+
+            <td>table data new row</td>
+          </tr>
+
+          <tfoot>
+            <tr>
+              <th>table head</th>
+
+              <th colspan="2">colspan 2 footer</th>
+            </tr>
+          </tfoot>
+        </table>
       </section>
     </main>
 
     <footer>
-      <h1>footer stuff</h1>
+      <h1>Footer stuff</h1>
       S
       <p>
         <a href="https://www.calderonbulldogs.com/">Click here for dogs</a>
