@@ -14,31 +14,42 @@
 
   <body>
     <header>
-      <h1>top h1 heading oustide section</h1>
-      <hr />
+      <h1 id="f">HTML Basics</h1>
+
       <nav>
         <ul>
           <li>
-            <a href="#s1">Section 1</a>
-          </li>
-          <li>
-            <a href="#s2">Section 2</a>
-          </li>
-          <li>
-            <a href="#s3">Section 3</a>
-          </li>
-          <li>
             <a href="about.html">About me</a>
+          </li>
+          <li>
+            <a href="#s1">Images</a>
+          </li>
+          <li>
+            <a href="#s2">Random Stuff</a>
+          </li>
+          <li>
+            <a href="#s3">Tables</a>
+          </li>
+          <li>
+            <a href="#s4">Forms & Input</a>
           </li>
         </ul>
       </nav>
     </header>
     <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
     <main>
       <section id="s1">
-        <h1>Section 1</h1>
-        <h2>code tag</h2>
-        <p>this is c++ code example using code tag: <code>int i = 0;</code></p>
+        <h1>Images</h1>
+
         <h2>Images</h2>
         <img src="img/predator.jpg" title="jaguar" width="300" />
         <img src="img/monkey_book.jpg" title="monkey in forest" width="400" />
@@ -47,17 +58,35 @@
           title="turtle in water jumping out"
           width="400"
         />
-
-        <hr />
       </section>
       <!--*********************************************************************************-->
-
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
       <section id="s2">
-        <h1>Section 2</h1>
-        <h2>Random stuff</h2>
+        <h1>Random Stuff</h1>
+        <h2>download, code & dropdown</h2>
         <ul>
           <li>
-            <a href="html-5.png" download target="_blank">Download Link</a>
+            <a href="html-5.png" download target="_blank"
+              >Html-5.png Download Link</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.calderonbulldogs.com/"
+              >Click here for dogs</a
+            >
+          </li>
+
+          <li>
+            This is c++ code example using code tag: <code>int i = 0;</code>
           </li>
         </ul>
 
@@ -86,12 +115,21 @@
           <li>list</li>
         </ul>
       </section>
+
       <!-- *********************************************************************************-->
 
       <hr />
-
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
       <section id="s3">
-        <h1>Section 3</h1>
+        <h1>Tables Forms & Inputs</h1>
         <h2>Tables</h2>
         <table>
           <caption>
@@ -138,22 +176,219 @@
             </tr>
           </tfoot>
         </table>
+
+        <!-- *********************************************************************************-->
+
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <section id="s4">
+          <h1>Forms & Inputs</h1>
+          <article id="contact">
+            <h2>CONTACT ME</h2>
+            <form
+              action="https://httpbin.org/post"
+              method="post"
+              target="_blank"
+            >
+              <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                  <label for="firstName">First Name: </label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </p>
+                <p>
+                  <label for="lastName">Last Name: </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Last Name"
+                  />
+                </p>
+
+                <p>
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="555 555 5555"
+                    pattern="\d{3}\d{3}\d{4}"
+                    required
+                  />
+                </p>
+
+                <p>
+                  <label for="year">Year</label>
+                  <input
+                    type="number"
+                    name="year"
+                    id="year"
+                    value="2000"
+                    step="10"
+                  />
+                </p>
+
+                <p>
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="password"
+                  />
+                </p>
+              </fieldset>
+
+              <br />
+
+              <fieldset>
+                <legend>Optimal movments</legend>
+                <select name="lift" id="lift">
+                  <optgroup label="group 1">
+                    <option value="" disabled selected>
+                      -- Select a lift --
+                    </option>
+                    <option value="North Macedonian Hinge">
+                      North Macedonian Hinge
+                    </option>
+                    <option value="Armenian curl">Armenian Curl</option>
+                    <option value="Balkland tug">Balkland Tug</option>
+                    <option value="Lebanese thrust">Lebanese Thrust</option>
+                  </optgroup>
+
+                  <optgroup label="group 2">
+                    <option value="North Macedonian Hinge">
+                      North Macedonian Hinge
+                    </option>
+                    <option value="Armenian curl">Armenian Curl</option>
+                    <option value="Balkland tug">Balkland Tug</option>
+                    <option value="Lebanese thrust">Lebanese Thrust</option>
+                  </optgroup>
+                </select>
+              </fieldset>
+
+              <fieldset>
+                <legend>Radio Options</legend>
+                <p>
+                  <input
+                    type="radio"
+                    name="food"
+                    id="protein"
+                    value="protein"
+                  />
+                  <label for="protein">Protein</label>
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    name="food"
+                    id="protein"
+                    value="protein"
+                  />
+                  <label for="protein">Protein</label>
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    name="food"
+                    id="protein"
+                    value="protein"
+                  />
+                  <label for="protein">Protein</label>
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    name="food"
+                    id="protein"
+                    value="protein"
+                  />
+                  <label for="protein">Protein</label>
+                </p>
+              </fieldset>
+
+              <fieldset>
+                <legend>favorite dogs</legend>
+                <p>
+                  <input
+                    type="checkbox"
+                    name="pets"
+                    id="kratos"
+                    value="kratos"
+                  />
+                  <label for="kratos">kratos</label>
+                </p>
+                <p>
+                  <input type="checkbox" name="pets" id="coco" value="coco" />
+                  <label for="coco">coco</label>
+                </p>
+                <p>
+                  <input type="checkbox" name="pets" id="wanda" value="wanda" />
+                  <label for="wanda">wand</label>
+                </p>
+                <p>
+                  <input type="checkbox" name="pets" id="max" value="max" />
+                  <label for="max">max</label>
+                </p>
+                <p>
+                  <input type="checkbox" name="pets" id="angie" value="angie" />
+                  <label for="angie">angie</label>
+                </p>
+              </fieldset>
+
+              <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message: </label>
+                <br />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Type message here"
+                ></textarea>
+              </fieldset>
+              <button type="submit" id="submit">Sumbit All</button>
+              <button type="reset" id="button-reset">Reset Form</button>
+              <br />
+            </form>
+          </article>
+        </section>
+        <br /><br />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
       </section>
+
+      <!-- *********************************************************************************-->
     </main>
 
     <footer>
-      <h1>Footer stuff</h1>
-      S
+      <h1>Footer</h1>
       <p>
-        <a href="https://www.calderonbulldogs.com/">Click here for dogs</a>
-      </p>
-      <p>
-        <abbr title="I dont know">idk</abbr>
-      </p>
-      <hr />
-
-      <p>
-        <a href="#">back to top</a>
+        <a href="#">Back To Top</a>
       </p>
     </footer>
   </body>

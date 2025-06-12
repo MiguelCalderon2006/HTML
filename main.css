@@ -32,3 +32,40 @@ caption {
   border-collapse: collapse;
   padding: 0.5rem;
 }
+
+#button-reset {
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#button-reset:hover {
+  background: darkred;
+}
+#submit {
+  background: linear-gradient(to right, #053a06, #388e3c);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#submit:hover {
+  background: linear-gradient(to right, #064509, #2e7d32);
+  transform: scale(1.05);
+}
+
+#submit:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
